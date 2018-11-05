@@ -8,3 +8,14 @@ cache:
 
 script:
   - bash <(curl -s https://codecov.io/bash)
+  
+  
+# blocklist
+#branches:
+ # except:
+  #- development
+  
+# safelist
+branches:
+  only:
+  - master
