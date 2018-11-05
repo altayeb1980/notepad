@@ -25,7 +25,7 @@ after_success:
 - git config --global user.email "loay.saada@gmail.com"
 - git config --global user.name "Altayeb Saadeh"
 - git clone --depth=50 --branch=master https://github.com/altayeb1980/notepad.git
-- cd HotelDeals
+- cd notepad
 - ls -l
 - cp -r /home/travis/build/altayeb1980/notepad/target $HOME/buildApp/notepad
 - ls -l
