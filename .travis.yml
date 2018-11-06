@@ -19,4 +19,4 @@ services:
   - mysql
   
 before_install:
-  - mysql -e 'CREATE DATABASE notepad;CREATE TABLE note (id INTEGER NOT NULL AUTO_INCREMENT,title VARCHAR(255) NOT NULL,content VARCHAR(255) NOT NULL,PRIMARY KEY (id));'  
+  - mysql -e 'CREATE DATABASE notepad;CREATE TABLE notepad.note (id INTEGER NOT NULL AUTO_INCREMENT,title VARCHAR(255) NOT NULL,content VARCHAR(255) NOT NULL,PRIMARY KEY (id));'  
