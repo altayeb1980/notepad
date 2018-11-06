@@ -29,7 +29,7 @@ public class NoteServiceTest {
 	
 	@Before
 	public void setUp() {
-		note = new Note("Kubernetes", "Best container orchestration tool ever");
+		note = new Note("Kubernetes", "Best container orchestration tool ever1");
 	}
 	
 	@After
