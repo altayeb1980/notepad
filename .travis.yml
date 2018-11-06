@@ -6,8 +6,8 @@ cache:
   directories:
   - $HOME/.m2
 
-script:
-  - bash <(curl -s https://codecov.io/bash)
+#script:
+ # - bash <(curl -s https://codecov.io/bash)
   
   
 # safelist
@@ -15,23 +15,8 @@ branches:
   only:
   - master
   
-after_success:
-- pwd
-- mkdir $HOME/buildApp/
-- ls -l
-- cd $HOME/buildApp/
-- pwd
-- ls -l
-- git config --global user.email "loay.saada@gmail.com"
-- git config --global user.name "Altayeb Saadeh"
-- git clone --depth=50 --branch=master https://github.com/altayeb1980/notepad.git
-- cd notepad
-- ls -l
-- cp -r /home/travis/build/altayeb1980/notepad/target $HOME/buildApp/notepad
-- ls -l
-- git add .
-- git remote rm origin
-- git remote add origin https://$GITHUB_TOKEN@github.com/altayeb1980/notepad.git
-- git add .
-- git commit -m "Travis Build $TRAVIS_BUILD_NUMBER pushed"
-- git push -fq origin master
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: "notepad-1.0.0.jar"
+  skip_cleanup: true
