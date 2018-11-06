@@ -7,5 +7,6 @@
 hs_err_pid*
 .idea/
 *.iml
-!target/notepad-1.0.0.jar
 /target/
+!target/notepad-1.0.0.jar
+
