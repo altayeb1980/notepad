@@ -11,9 +11,9 @@ script:
   
   
 # safelist
-branches:
-  only:
-  - master
+#branches:
+ # only:
+  #- master
   
 after_success:
 - pwd
