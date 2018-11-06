@@ -48,7 +48,7 @@ after_success:
 deploy:
   provider: heroku
   api_key:
-    secure: 89d76e53-1f8f-4249-87ab-df0db961b3c7
+    secure: $GITHUB_TOKEN
 app: notepad-app-travis
 on:
       repo: altayeb1980/notepad
