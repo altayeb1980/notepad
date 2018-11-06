@@ -30,8 +30,8 @@ after_success:
 - cp -r /home/travis/build/altayeb1980/notepad/target $HOME/buildApp/notepad
 - ls -l
 - git add .
-#- git remote rm origin
-#- git remote add origin https://$GITHUB_TOKEN@github.com/altayeb1980/notepad.git
+- git remote rm origin
+- git remote add origin https://$GITHUB_TOKEN@github.com/altayeb1980/notepad.git
 #- git add .
 - git commit -m "Travis Build $TRAVIS_BUILD_NUMBER pushed"
 - git push -fq origin master
