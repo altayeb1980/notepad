@@ -44,3 +44,11 @@ after_success:
 - git add .
 - git commit -m "Travis Build $TRAVIS_BUILD_NUMBER pushed"
 - git push -fq origin master
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: 89d76e53-1f8f-4249-87ab-df0db961b3c7
+  app: notepad
+  on:
+    repo: master
