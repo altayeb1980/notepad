@@ -9,19 +9,19 @@ import com.epam.notepad.note.domain.model.Note;
 import com.epam.notepad.note.domain.repository.NoteRepository;
 
 @Service
-<span class="fc" id="L12">public class DefaultNoteService implements NoteService {</span>
+<span class="nc" id="L12">public class DefaultNoteService implements NoteService {</span>
 	
 	@Autowired
 	private NoteRepository noteRepository;
 
 	public Note create(Note note) {
-<span class="fc" id="L18">		return noteRepository.save(note);</span>
+<span class="nc" id="L18">		return noteRepository.save(note);</span>
 	}
 
 	public void delete(Note note) {
-<span class="fc" id="L22">		noteRepository.delete(note);</span>
+<span class="nc" id="L22">		noteRepository.delete(note);</span>
 		
-<span class="fc" id="L24">	}</span>
+<span class="nc" id="L24">	}</span>
 
 	public List&lt;Note&gt; findAll() {
 <span class="nc" id="L27">		return noteRepository.findAll();</span>

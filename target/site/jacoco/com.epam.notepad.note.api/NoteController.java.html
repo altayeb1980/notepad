@@ -21,12 +21,12 @@ import com.epam.notepad.note.domain.model.Note;
 import com.epam.notepad.note.domain.service.NoteService;
 
 @Controller
-<span class="fc" id="L24">public class NoteController {</span>
+<span class="nc" id="L24">public class NoteController {</span>
 	
 	@Autowired
 	private NoteService noteService;
 
-<span class="fc" id="L29">	private final Logger logger = LoggerFactory.getLogger(this.getClass());</span>
+<span class="nc" id="L29">	private final Logger logger = LoggerFactory.getLogger(this.getClass());</span>
 
 	@RequestMapping(&quot;/&quot;)
 	public ModelAndView index() {
@@ -40,8 +40,8 @@ import com.epam.notepad.note.domain.service.NoteService;
 	@ResponseBody
 	@ResponseStatus(code = HttpStatus.CREATED)
 	public Note create(@RequestBody @Valid Note note) {
-<span class="fc" id="L43">		logger.debug(&quot;Create note request: {}&quot;, note);</span>
-<span class="fc" id="L44">		return noteService.create(note);</span>
+<span class="nc" id="L43">		logger.debug(&quot;Create note request: {}&quot;, note);</span>
+<span class="nc" id="L44">		return noteService.create(note);</span>
 	}
 
 }
