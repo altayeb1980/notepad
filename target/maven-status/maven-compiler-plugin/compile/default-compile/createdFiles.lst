@@ -1,6 +1,6 @@
-com/epam/notepad/note/domain/service/DefaultNoteService.class
-com/epam/notepad/note/domain/model/Note.class
 com/epam/notepad/Application.class
+com/epam/notepad/note/domain/service/DefaultNoteService.class
 com/epam/notepad/note/domain/repository/NoteRepository.class
+com/epam/notepad/note/domain/model/Note.class
 com/epam/notepad/note/domain/service/NoteService.class
 com/epam/notepad/note/api/NoteController.class
