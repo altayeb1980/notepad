@@ -1,4 +1,0 @@
-/home/travis/build/altayeb1980/notepad/src/test/java/com/epam/notepad/AppTest.java
-/home/travis/build/altayeb1980/notepad/src/test/java/com/epam/notepad/integrationTests/note/domain/service/NoteServiceTest.java
-/home/travis/build/altayeb1980/notepad/src/test/java/com/epam/notepad/unitTests/note/domain/model/NoteTest.java
-/home/travis/build/altayeb1980/notepad/src/test/java/com/epam/notepad/integrationTests/note/api/NoteControllerTest.java

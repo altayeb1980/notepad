@@ -1,4 +1,0 @@
-com/epam/notepad/AppTest.class
-com/epam/notepad/integrationTests/note/api/NoteControllerTest.class
-com/epam/notepad/unitTests/note/domain/model/NoteTest.class
-com/epam/notepad/integrationTests/note/domain/service/NoteServiceTest.class
